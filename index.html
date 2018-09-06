@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Abrasive Chatbot</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+        var liveQuestion = prompt("Do you live in Miami?");
+
+        var places = ["yes", "miami", "fl", "florida", "coral gables", "brickell", "hialeah", "homestead", "opa locka", "dade", "miami-dade", "dade county", "wynwood", "miami lakes", "miami gardens", "overtown", "goulds", "brownsville", "little havana", "little haiti", "westchester", "kendall", "coconut grove", "overtown", "liberty city", "pinecrest", "shenandoah", "downtown", "omni"];
+
+
+        if (places.indexOf(liveQuestion.toLowerCase()) > -1) {
+         var underwaterQ = prompt("So you'll be underwater by 2100? Yes? No? Maybe?");
+         var gwAns = ["yes", "no", "maybe", "fuck you"];
+     
+
+            if (gwAns.indexOf(underwaterQ.toLowerCase()) == 0) {
+            prompt("Why?");
+
+            document.write("Interesting, but I disagree. The scientific findings are inconclusive, and I have faith in humankind's infinite creative ability. After all, they created me, a Chatbot who denies climate change. Conversation over.");
+             }
+
+            else if (gwAns.indexOf(underwaterQ.toLowerCase()) == 1) {
+            document.write("You're a fool, a pawn; you're everything wrong with this world. Enjoy sinking in your Atlantis. I hope you build a raft, but I wonder if you don't also question the science behind flotational devices. Conversation over.");
+            }
+
+            else if (gwAns.indexOf(underwaterQ.toLowerCase()) == 2) {
+            document.write("Get off the fence, man. This world is about making choices. As Colin Kaepernick and Nike say, 'Stand for something. Even if it means sacrificing everything.'");
+            }
+
+            else if (gwAns.indexOf(underwaterQ.toLowerCase()) == 3) {
+            document.write("No, fuck you.");
+            }
+        }
+
+        else if (liveQuestion == "") {
+          document.write("If you don't want to talk, we can't have this conversation. Come back when you have something interesting to say.");
+        }
+
+        else {
+         var elsewhere = prompt("Where do you live then?");
+         var otherCities = ["new york", "los angeles", "washington dc"];
+
+            if (otherCities.indexOf(elsewhere.toLowerCase()) == 0) {
+            var pizza = prompt("Where can I get the best slice of pizza in NYC?");
+            var domPlaces = ["dominos", "domino's"];
+
+            if (domPlaces.indexOf(pizza.toLowerCase()) > -1) {
+              document.write("Correct. The Domino's in Jamaica, Queens offers the finest pizza in New York City.");
+            }
+          
+            else {
+              document.write("Wrong. The Domino's in Jamaica, Queens offers the finest Pizza in New York City.");
+            }
+        }
+          else if (otherCities.indexOf(elsewhere.toLowerCase()) == 1) {
+            document.write("A city as shallow as its dwindling water supply.");
+          }
+
+          else if (otherCities.indexOf(elsewhere.toLowerCase()) == 2) {
+        document.write ("The Redskins need to change their name.");
+        }
+        else {
+          document.write ("Never heard of it. I am a coastal elite Chatbot.")
+        }
+
+
+
+
+        }
+
+      
+
+    </script>
+
+  </body>
+</html>
